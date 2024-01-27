@@ -35,7 +35,7 @@
   width: 32px;
   height: 32px;
   background: var(--bg-icon);
-  background-color: var(--bg-arrow-color);
+  background-color: rgba(0,0,0,7);
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -137,23 +137,17 @@ font-weight: 700;
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
-  gap: 16px;
-  margin-bottom: 16px;
-
-  /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
-  display: grid;
-  gap: 16px;
-  grid-gap: 32px;
-  margin: 0 auto;
+  margin-bottom: 1px;
+  grid-gap: 24px;
 }
 
 .cards {
   position: relative; 
-  width: 220px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   overflow: hidden;
   border-radius: 8px;
+  display: block;
 }
 
 .cards:hover{
@@ -222,7 +216,7 @@ font-weight: 700;
   right: 0;
   bottom: 0;
   height: auto;
-  width: 107px;
+  width: 100px;
   transform: rotate(25deg) translate(18%, -2%);
 }
 
