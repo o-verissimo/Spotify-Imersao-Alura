@@ -7,6 +7,7 @@ function requestApi(searchTerm) {
     fetch(url)
         .then((response) => response.json())
         .then((result) => displayResults(result))
+        .catch(error => console.error('Erro na requisição:', error));
 }
 
 function displayResults(result) {
@@ -24,10 +25,13 @@ function displayResults(result) {
 
 document.addEventListener('input', function () {
     const searchTerm = searchInput.value.toLowerCase();
+
+
     if (searchTerm === '') {
         resultPlaylist.classList.add('hidden');
         resultArtist.classList.remove('hidden');
-        return
+
+        return;
     }
     
     requestApi(searchTerm);

@@ -1,5 +1,71 @@
-@media screen and (max-width: 1015px) {
-    .offer__list-item {
-      grid-template-columns: 1fr 1fr;
-    }
+@media screen and (max-width: 1670px) {
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr
   }
+}
+
+@media screen and (min-width: 1016px) and (max-width: 1410px) {
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr 1fr 
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .offer__list-item {
+    grid-template-columns: 1fr 1fr 
+  }
+
+  .header__search {
+    /* display: none !important; */
+    width: auto !important;
+    display:flexbox;
+  }
+
+  .header__search input{
+    width: auto !important;
+    display:flexbox;
+  }
+
+}
+
+@media screen and (max-width: 1050px) {
+  .header__search {
+    /* display: none !important; */
+    width: auto !important;
+    display: none;
+  }
+
+  .header__search input{
+    width: auto !important;
+    display: none;
+  }
+
+  .disclaimer-premium{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .playlist {
+    display: none;
+  }
+
+  .playlist-container {
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: auto; /* Altura automática, ajusta conforme o conteúdo */
+  }
+
+  .sidebar {
+    width: 342px;
+  }
+
+  .offer__list-item {
+    grid-template-columns: 1fr;
+  }
+
+  .offer__scroll-container {
+    overflow-y: visible;
+  }
+
+}

@@ -1,0 +1,280 @@
+@font-face {
+    font-family: "Circular";
+    src: url("../assets/Circular/CircularStd-Bold.ttf");
+    src: url("../assets/Circular/CircularStd-Book.ttf");
+    src: url("../assets/Circular/CircularStd-Black.ttf");
+    src: url("../assets/Circular/CircularStd-Medium.ttf");
+  }
+
+body{
+    background-color: #000;
+    font-family: "Circular", CircularStd-Bold;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 18.75rem; /* 300px para rem */
+    background-color: #000000;
+    padding: 0.75rem; /* 12px para rem */
+}
+
+.sidebar .logo {
+    background-color: #121212;
+    display: flex;
+    border-radius: 0.5rem; /* 8px para rem */
+    padding: 1rem 0 0 1rem; /* 16px, 0, 0, 16px para rem */
+}
+
+.sidebar .logo img {
+    width: 5rem; /* 80px para rem */
+}
+
+.sidebar__navigation {
+    background-color: #121212;
+    border-radius: 0.5rem; /* 8px para rem */
+    cursor: pointer;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    margin-top: 1.25rem; /* 20px para rem */
+    padding: 0 1.25rem 0.625rem 1.25rem; /* 0, 20px, 10px, 20px para rem */
+}
+
+.sidebar nav ul li {
+    padding: 0.625rem 0; /* 10px, 0 para rem */
+}
+
+.sidebar nav ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px para rem */
+}
+
+.sidebar nav ul li .fa {
+    font-size: 1.25rem; /* 20px para rem */
+    margin-right: 0.625rem; /* 10px para rem */
+    font-weight: 300;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 0.5rem; /* 8px para rem */
+    display: flex;
+    justify-content: space-between;
+    min-block-size: 2.5rem; /* 40px para rem */
+    padding: 0.25rem 0.5rem; /* 4px, 8px para rem */
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px para rem */
+    margin-top: 0.625rem; /* 10px para rem */
+    flex-direction: column;
+}
+
+.library .library__button {
+    margin-right: 0.625rem; /* 10px para rem */
+    color: #b3b3b3;
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 1.25rem 0.625rem; /* 20px, 10px para rem */
+    display: flex;
+}
+
+.library .library__button .fa {
+    font-size: 1.25rem; /* 20px para rem */
+    margin-right: 0.625rem; /* 10px para rem */
+    font-weight: 300;
+    padding-right: 0.5rem; /* 8px para rem */
+    cursor: pointer;
+}
+
+.library .fa-plus{
+    cursor: pointer;
+}
+
+.library__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library__content .plus {
+    margin: 1.063rem 0.625rem; /* 24px, 10px para rem */
+    font-size: 1.25rem;
+}
+
+.section-playlist {
+    background-color: #242424;
+    align-items: flex-start;
+    border-radius: 0.5rem; /* 8px para rem */
+    gap: 1.25rem; /* 20px para rem */
+    display: flex;
+    justify-content: space-between;
+    min-block-size: 2.5rem; /* 40px para rem */
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px para rem */
+    margin: 0.5rem 0;
+    padding: 1rem 1.25rem; /* 16px, 20px para rem */
+}
+
+.section-playlist .section-playlist__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist__content .text {
+    padding-bottom: 0.875rem; /* 14px para rem */
+    color: #fff;
+}
+
+.section-playlist__content .title {
+    font-weight: 700;
+}
+
+.section-playlist__content .subtitle {
+    font-weight: 500;
+    font-size: 0.8rem; /* 12.*/
+}
+
+.section-playlist__content .section-playlist__button{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    color:#000;
+    border-radius: 1.25rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration:none;
+    text-transform: none;
+    padding:0.625rem;
+    margin-top: 0.8rem;
+    border:0;
+    width: 7.063rem;
+}
+
+.sidebar .cookies{
+    margin:1.563rem 1.25rem;
+}
+
+.sidebar .cookies a{
+    color:#b3b3b3;
+    font-weight: 500;
+    font-size:0.725rem;
+    text-decoration: none;
+}
+
+
+.languages .languages__button{
+    align-items: center;
+    background-color: transparent;
+    border: 0.063rem solid #878787;
+    color:#FFF;
+    font-weight: bold;
+    cursor:pointer;
+    width: 10.625rem;
+    margin:0.5rem;
+    padding:0.5rem;
+    border-radius:1.25rem;
+}
+
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0.525rem;
+    left: 0.525rem;
+    right: 0.525rem;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 0.638rem 1.0rem;
+    display: flex;
+    justify-content: space-between;
+}
+.disclaimer-premium .text {
+   flex-shrink: 0;
+   cursor: pointer;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    font-family: "Circular", CircularStd-Black;
+    font-weight:500;
+    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.875rem 1.875rem;
+    border: 0;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* HOVER*/
+
+.sidebar .cookies a:hover{
+    text-decoration: underline;
+}
+
+.header__search:hover {
+    border: 1px solid #fff;
+  }
+
+  .header__login .subscribe:hover {
+    transform: scale(1.04);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .header__login .login:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+
+  .section-playlist__content .section-playlist__button:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+
+  .languages .languages__button:hover{
+    background-color: #fff;
+    color:#000;
+    border: 1px solid #000;
+  }
+
+  .disclaimer-premium button:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+
+  .library .library__button:hover{
+    color: #ffffff;
+}
+
+.sidebar nav ul li a:hover {
+    color: #ffffff;
+}
+
+.library .library__content .plus:hover{
+    color: #ffffff;
+    cursor:pointer;
+}
